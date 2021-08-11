@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Click here](https://github.com/TejasShekar/Frontend-mentor--order-summary-component)
+- Solution URL: [Click here](https://www.frontendmentor.io/solutions/built-using-purely-html-and-css-wWeGuw0F1)
 - Live Site URL: [Click here](https://tejasshekar.github.io/Frontend-mentor--order-summary-component/)
 
 ## My process
