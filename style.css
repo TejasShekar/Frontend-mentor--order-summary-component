@@ -19,90 +19,116 @@ body {
   line-height: 1.6;
   background: url(../images/pattern-background-desktop.svg);
   background-repeat: no-repeat;
-  background-position: 0px -20px;
-  background-size: cover;
+  background-position: 0px -80px;
+  background-size: auto;
   background-color: var(--pale-blue);
 }
-h1 {
-  font-weight: 900;
-  font-size: 1.5rem;
-  padding: 10px 0;
+
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 375px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px;
 }
-p {
+main picture img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+main h1 {
+  padding: 30px 0px 10px 0px;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+main p {
   padding: 0 30px;
   color: var(--desaturated-blue);
 }
-li {
-  list-style: none;
-  padding: 10px;
-}
-strong {
-  font-weight: 900;
-}
-small {
-  color: var(--desaturated-blue);
-  font-size: medium;
-}
-button {
-  display: block;
-  margin: auto;
-  width: 80%;
-  background-color: var(--bright-blue);
-  border: none;
-  box-shadow: 5px 5px 1rem 0px var(--desaturated-blue);
-  border-radius: 10px;
-  padding: 15px;
-}
-button a {
-  text-decoration: none;
-  color: var(--pale-blue);
-  font-weight: 900;
-  font-size: 1rem;
-}
-
-.container {
-  background-color: white;
-  max-width: 350px;
-  text-align: center;
-  margin: 20px auto;
-  border-radius: 20px;
-  box-shadow: 20px 20px 2rem 0px var(--desaturated-blue);
-}
-.container .hero img {
-  border-radius: 20px 20px 0 0;
-  width: 100%;
-}
 .flex-3 {
+  list-style: none;
+  background-color: var(--very-pale-blue);
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: var(--very-pale-blue);
+  margin: 1rem;
+  padding: 20px;
   border-radius: 10px;
-  margin: 30px 20px;
-  padding: 5px 10px;
+}
+.flex-3 li {
+  margin: 0px 10px;
+}
+.plan-details {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+}
+.plan-details strong {
+  font-weight: 900;
+}
+.plan-details small {
+  color: var(--desaturated-blue);
 }
 .flex-3 a {
   color: var(--bright-blue);
   font-weight: 900;
+  font-size: 90%;
 }
-.container .cancel-btn {
-  display: inline-block;
-  padding: 30px;
+button {
+  padding: 1rem 4.5rem;
+}
+.pay-btn {
+  cursor: pointer;
+  background-color: var(--bright-blue);
+  border-radius: 10px;
+  color: var(--very-pale-blue);
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  margin: 0.5rem auto;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.3);
+}
+.cancel-btn {
+  cursor: pointer;
+  background-color: transparent;
   color: var(--desaturated-blue);
-  text-decoration: none;
   font-weight: 900;
+  font-size: 1rem;
+  border: none;
+  margin-bottom: 1rem;
 }
+
+/* btn active states */
+.pay-btn:active {
+  background-color: hsl(245, 48%, 58%);
+  color: white;
+  box-shadow: none;
+}
+.cancel-btn:active {
+  color: black;
+}
+.flex-3 a:active {
+  color: hsl(245, 48%, 58%);
+  text-decoration: none;
+}
+
+/* footer */
 .attribution {
   font-size: 11px;
-  margin-top: 7px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 376px) {
-  .container {
-    margin: 20px;
+/* media queries */
+@media (min-width: 376px) {
+  main {
+    margin: auto;
+    transform: scale(0.95);
   }
 }
