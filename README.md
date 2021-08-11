@@ -52,6 +52,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Tejas Shekar]()
 - Frontend Mentor - [@TejasShekar](https://www.frontendmentor.io/profile/TejasShekar)
 - Twitter - [@tejas_shekar](https://twitter.com/tejas_shekar)
