@@ -13,8 +13,8 @@
     <title>Frontend Mentor | Order summary card</title>
   </head>
   <body>
-    <div class="container">
-      <picture class="hero">
+    <main>
+      <picture>
         <img src="./images/illustration-hero.svg" alt="Enjoying Music" />
       </picture>
       <h1>Order Summary</h1>
@@ -22,21 +22,21 @@
         You can now listen to millions of songs, audiobooks, and podcasts on any
         device anywhere you like!
       </p>
-      <div class="plan">
+      <div>
         <ul class="flex-3">
           <li>
             <img src="./images/icon-music.svg" alt="Music Icon" />
           </li>
-          <li>
+          <li class="plan-details">
             <strong>Annual Plan</strong>
             <small>$59.99/year</small>
           </li>
           <li><a href="#">Change</a></li>
         </ul>
       </div>
-      <button><a href="#">Proceed to Payment</a></button>
-      <a class="cancel-btn" href="#">Cancel Order</a>
-    </div>
+      <button class="pay-btn" type="button">Proceed to Payment</button>
+      <button class="cancel-btn" type="button">Cancel Order</button>
+    </main>
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
