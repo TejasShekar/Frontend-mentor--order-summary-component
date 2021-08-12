@@ -44,11 +44,19 @@ Users should be able to:
 
 1. How to use display:flex and how I can save time using it.
 2. How to add active states for buttons.
+3. How to disable text selection and also remove blue box on tap
+
+```css
+button {
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+```
 
 ### Continued development
 
-1. I still need to practise more on what properties work on certain elements and what properties does not work. Also, I will be working on methods where I can avoid repetitive use of same properties over and over.
-2. I need to understand how to use flexbox and also manipulate items inside each child of flexbox like dividing flexbox on custom proportions. 
+1. I still need to understand and practise more on what properties work on certain elements and what properties does not work. Also, I will be working on methods where I can avoid repetitive use of same properties over and over.
+2. I need to understand how to use flexbox and also manipulate items inside each child of flexbox like dividing flexbox on custom proportions.
 
 ## Author
 
