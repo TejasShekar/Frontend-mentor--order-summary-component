@@ -17,7 +17,7 @@
 body {
   font-size: 16px;
   line-height: 1.6;
-  background: url(../images/pattern-background-desktop.svg);
+  background: url(./images/pattern-background-desktop.svg);
   background-repeat: no-repeat;
   background-position: 0px -80px;
   background-size: auto;
@@ -78,9 +78,14 @@ main p {
   color: var(--bright-blue);
   font-weight: 900;
   font-size: 90%;
+  text-decoration: underline;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
 }
 button {
   padding: 1rem 4.5rem;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
 }
 .pay-btn {
   cursor: pointer;
